@@ -1,9 +1,5 @@
 step:
 
-1. setup virtualenv
+1. `sudo docker-compose build`
 
-2. activate environment
-
-3. `cd goal`
-
-4. `scrapy crawl goal`
+2. `sudo docker-compose up`

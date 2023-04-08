@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  spider:
+    build:
+      context: .
+    volumes:
+      - .:/goal
+    command: >
+      sh -c " scrapy crawl theguardian &&
+              scrapy crawl goal
+            "
+    environment:
+      - SCRAPER_ARGS=

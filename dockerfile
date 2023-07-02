@@ -9,3 +9,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # CMD ["scrapy", "crawl", "theguardian"]
+
+#  sh -c " scrapy crawl theguardian &&
+#               scrapy crawl goal
+#             "

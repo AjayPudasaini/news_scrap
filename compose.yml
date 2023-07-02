@@ -8,7 +8,8 @@ services:
       - .:/goal
     command: >
       sh -c " scrapy crawl theguardian &&
-              scrapy crawl goal
+              scrapy crawl goal && 
+              scrapy crawl ndtv 
             "
     environment:
       - SCRAPER_ARGS=
